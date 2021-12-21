@@ -117,3 +117,14 @@ function displayAccessKeys() {
 addLoadEvent(diaplayAbbreviatons);
 addLoadEvent(displayCitations);
 addLoadEvent(displayAccessKeys);
+function addLoadEvent(func) {
+    var oldonload = window.onload;
+    if(typeof window.onload != 'function') {
+        window.onload = func;
+    } else {
+        window.onload = function() {
+            oldonload();
+            func();
+        }
+    }
+}
