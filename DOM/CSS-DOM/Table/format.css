@@ -1,0 +1,33 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #fff;
+    color: #000;
+}
+table{
+    margin: auto;
+    border: 1px solid #699;
+}
+caption{
+    margin: auto;
+    padding: .2em;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+th{
+    font-weight: normal;
+    font-style: italic;
+    text-align: left;
+    border: 1px dotted #699;
+    background-color: #9cc;
+    color: #000;
+}
+tr td {
+    width: 10em;
+    padding: .5em;
+}
+/* 通过css3在表格中交替改变背景色
+ tr:nth-child(odd) {background-color: #ffc;}
+ tr:nth-child(even) {background-color: #fff;} */
+ .odd{
+    background-color: #ffc;
+ }

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="layout.css">
+</head>
+<body >
+    <h1>Snapshots</h1>
+    <ul>
+        <li>
+            <!--return false 拦截网页的默认行为，否则不仅会调用showPic函数，
+                也会触发链接点击的默认行为
+
+                this 指向本类对象，即元素结点<a>    
+            --> 
+            <a href="images/1.svg" onclick="showPic(this);
+             return false;" title="zhi">zhi</a>
+        </li>
+        <li>
+            <a href="images/2.svg"onclick="showPic(this);
+            return false;" title="hu">hu</a>
+        </li>
+        <li>
+            <a href="images/3.svg" onclick="showPic(this);
+            return false;" title="zhe">zhe</a>
+        </li>
+        <li>
+            <a href="images/4.svg" onclick="showPic(this);
+            return false;" title="ye">ye</a>
+        </li>
+    </ul>
+        <!--设置一个“占位符”来为图片预留浏览区域-->
+        <img id="placeholder" src="images/notion-avatar.png" alt="picture"></img>
+        <p id="descrition">choose a picture.</p>
+    <script src="showPic.js"></script>
+</body>
+</html>
